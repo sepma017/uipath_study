@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1105,630" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1105,819" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
@@ -87,7 +87,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="476,565" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence sap:VirtualizedContainerService.HintSize="476,606" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -96,28 +96,31 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,473" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6be348ce-fec3-4d3e-89e7-cc189ad9b1c5" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: NAVER" sap:VirtualizedContainerService.HintSize="434,514" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="9b76fbc7-7e7d-4f7f-a50e-1ebb2ad53ad3" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,253" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,254" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ClickType="Single" DisplayName="Click '증권'" sap:VirtualizedContainerService.HintSize="334,160" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6be348ce-fec3-4d3e-89e7-cc189ad9b1c5" Version="V1">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.naver.com/" DesignTimeRectangle="886, 350, 29, 30" ElementType="Text" FriendlyName="'증권'" FullSelectorArgument="&lt;webctrl aaname='증권' parentid='NM_FAVORITE' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='증권' parentid='NM_FAVORITE' tag='A' type='' class='nav' check:innerText='증권' /&gt;" Guid="d3b9d8ec-dc81-44b0-8b6e-8d3883c3fd19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAYAAADRcLDBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADpSURBVFhH7ZTtDYQgDECZkcSFDKvgKDiIPxijZ0wrUODAjzMm15c0UcLHKwUUvACRIESCEAlCJIj/k/CTBqUUmBkbkEyCOrZCTx5HIIsFXegX9+2WSPFgB5xssOvfQWZzVYIENNgZszwqckUilMSAwzZYv8zWVihFDZSgRfskcNCW/YJtGUGGT8bhi54oRz9h577EWkrXlggZ9kdcrgi8KbxsP92JjEQiT65bwo3pwD3GYu4p13eCzAuHc3+QKmVgV5LTL3Fyoo3G2BqP7kSNe8/E/s40gs1RlXgSkSBEghAJQiSIF0gAfADB2AvsK/VGggAAAABJRU5ErkJggg==" InformativeScreenshot="1f8b4a1382df83715472612bcde5b92f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NAVER' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
-              </uix:NClick.Target>
-            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='ul' idx='2' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,160" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="9b76fbc7-7e7d-4f7f-a50e-1ebb2ad53ad3" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.naver.com/" DesignTimeRectangle="894, 303, 33, 34" ElementType="Text" FriendlyName="'증권'" FullSelectorArgument="&lt;webctrl aaname='증권' parentid='NM_FAVORITE' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='증권' parentid='NM_FAVORITE' tag='A' type='' class='nav' check:innerText='증권' /&gt;" Guid="60d393b1-92f9-48d0-9c5c-5a388344df8e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGASURBVFhH7Zi/bsIwEIfzdmzwEAzsbCzsLLwAEjvN2ikSMzwAYoK5W6dKHVp67S/4HP8ldhQjV8pJ30Cw7z7uTKSkoAzjf0gdjz+0Wn3TbPZF02k6kB91UM8MTWq3uzkTpAZ11ZBSMOZFL6+fdH77oMt7OpAfdbim2jEphVaykCtJKlgM9TmkFJ+h1B0yQT3URX0OKYUvgGtjarg2xyDlY5AKJQupw2ZMRVHQvLp/DpbijW2MNle5p+a0pZFjnbq2s5TOldYTkXyypYNzzQOqZd9SLDSmdSW6ECvWp1QzwiWV8vqe5vU1x+h8CCmW6CYlktTdOYnEFo0cJ/dhSvQwvnCazj7gb/RlvFTTgXDU8SqIf6I55qd2ykKTsn9sZ6lyoSeSLPbWWov+O8W/zHHY5Q3SMzbjFmDSXSoysUbLXpNwqYSdMomQutPpTMn7XAsiR7TUMxikQhmkQvFKZfkwmuVje5YvOBDZvQrigDFayWcsFciPOmqHOCypHCJDKaJfKkGawYye0cMAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NAVER' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="395, 292, 1130, 56" FriendlyName="'메일카페블로그지식iN쇼핑쇼핑LIVEPayT…'" FullSelectorArgument="&lt;webctrl parentid='NM_FAVORITE' tag='DIV' /&gt;" Guid="7061bbf2-15a7-424d-aedc-94b8d978efab" InformativeScreenshot="27a8b2b07d01363c89c48bda1d167174.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NAVER' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIfSURBVFhHxZZPT1NBFMVvcjbGhZv3KVz6aVSgtCoFNm5c+T1IdMnGL2AaIyFGhAoUaANiqUVflRhjQwzGhCY2RrzeqxM603c72znJLzmdN+d03r92CD8WagInokb4Ps8pIXwTkxDCaZVTQujPcUoIX+5xSgifxSSEcHKXU0L4eIej5CXO8mrAlbzM6FVGc3plznrzhXmaDboMCLmYGN1pHtfT8ybjeGY050PZHQml2aDLgPBeziRGZ8rVhbrfX5YvkDPUOcezbjSUZgt9YxC6YmK07QUM//ziG/lDxrvZf1jSrNnpQejI/Yzx9rarK6o7/MrXjuRStktuJJRmzU4PQlvOIMabW67O1vLZGuPQvkqaNTs9CIdiYuzHF6Ca+bTkXCjNmp0ehAN5kGK0brq6yTq/+OlcKM2anR6EfTEx9uwFDC6Gzk2WZs1OD0JLLkWMHfsWVHqPnJsszZqdHoSmmBgNewFZa46X+ivuky3Nmp0ehF15HWJs2a9h1lzgqztlPhicuJGiNGt2ehAaYmJsTljAnuzptkt8vfWAB7/t50GzZqcHYUt+kWLU7Xc8ayz+P/66xJXuYzcaSrOFvjEIm2JibEQWcDlnmp+c1t2RkTQbdBkQ6vJTGmNdXpdX8q8WIP+EG3IJL+dJmY6Nz9Os32VAWBeTEMKa7EwSQngpe7OEEF6ISQhhVfbnCSGsiEkI4bnsXhNCeFatCZyGau0vnrb5PVYj75UAAAAASUVORK5CYII=" InformativeScreenshot="1918bf9c10f57eb048c38a79fa419a9a.png" Selector="&lt;html app='chrome.exe' title='NAVER' /&gt;" Url="https://www.naver.com/" />
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" FilePath="[Nothing]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIfSURBVFhHxZZPT1NBFMVvcjbGhZv3KVz6aVSgtCoFNm5c+T1IdMnGL2AaIyFGhAoUaANiqUVflRhjQwzGhCY2RrzeqxM603c72znJLzmdN+d03r92CD8WagInokb4Ps8pIXwTkxDCaZVTQujPcUoIX+5xSgifxSSEcHKXU0L4eIej5CXO8mrAlbzM6FVGc3plznrzhXmaDboMCLmYGN1pHtfT8ybjeGY050PZHQml2aDLgPBeziRGZ8rVhbrfX5YvkDPUOcezbjSUZgt9YxC6YmK07QUM//ziG/lDxrvZf1jSrNnpQejI/Yzx9rarK6o7/MrXjuRStktuJJRmzU4PQlvOIMabW67O1vLZGuPQvkqaNTs9CIdiYuzHF6Ca+bTkXCjNmp0ehAN5kGK0brq6yTq/+OlcKM2anR6EfTEx9uwFDC6Gzk2WZs1OD0JLLkWMHfsWVHqPnJsszZqdHoSmmBgNewFZa46X+ivuky3Nmp0ehF15HWJs2a9h1lzgqztlPhicuJGiNGt2ehAaYmJsTljAnuzptkt8vfWAB7/t50GzZqcHYUt+kWLU7Xc8ayz+P/66xJXuYzcaSrOFvjEIm2JibEQWcDlnmp+c1t2RkTQbdBkQ6vJTGmNdXpdX8q8WIP+EG3IJL+dJmY6Nz9Os32VAWBeTEMKa7EwSQngpe7OEEF6ISQhhVfbnCSGsiEkI4bnsXhNCeFatCZyGau0vnrb5PVYj75UAAAAASUVORK5CYII=" InformativeScreenshot="bd3b241909e559e4eedab5eb470ecf46.png" Selector="&lt;html app='chrome.exe' title='NAVER' /&gt;" Url="https://www.naver.com/" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
